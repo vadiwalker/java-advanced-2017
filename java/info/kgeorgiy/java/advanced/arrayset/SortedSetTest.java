@@ -173,7 +173,7 @@ public class SortedSetTest extends BaseTest {
         runnable.run();
         final long time = System.currentTimeMillis() - start;
         System.out.println("    " + description + " done in " + time + "ms");
-        Assert.assertTrue(description + " works too slow", time < 100);
+        Assert.assertTrue(description + " works too slow", time < 200);
     }
 
     private SortedSet<Integer> performanceSet(final int size) {
