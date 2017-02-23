@@ -154,7 +154,7 @@ public class NavigableSetTest extends SortedSetTest {
                                 set.subSet(from, i % 2 == 1, to, i / 2 == 1),
                                 treeSet.subSet(from, i % 2 == 1, to, i / 2 == 1),
                                 String.format("in subSet(%d, %b, %d, %b) (comparator = %s, elements = %s",
-                                        from, i %2 == 1,
+                                        from, i % 2 == 1,
                                         to, i / 2 == 1,
                                         comparator, elements
                                 )
