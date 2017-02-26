@@ -216,8 +216,8 @@ public class ArraySet<E> extends AbstractSet<E> implements NavigableSet<E> {
     }
 
     private class ReversibleList<T> extends AbstractList implements RandomAccess {
-        List<T> realList;
-        boolean revFlag;
+        final List<T> realList;
+        final boolean revFlag;
 
         private ReversibleList(List<T> realList, boolean revFlag) {
             this.realList = realList;

@@ -17,22 +17,8 @@ public class Main {
         new Main().test();
     }
 
-    public @interface TODO {
-        int id();
-        String synopsis();
-        String assignee() default "unassigned";
-        String date() default "undefined";
-    }
-
-    @TODO (
-            id = 123,
-            synopsis = "Implement",
-            assignee = "Georigy Korneev",
-            date = "22.02.2017"
-    )
-
     void test() {
         SortedSet set = new ArraySet<String>();
-        System.out.println(set.getClass().getU);
+        System.out.println(set.getClass());
     }
 }
